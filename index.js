@@ -28,7 +28,7 @@ app.use(express.json());
 app.use(cookieParser())
 
 app.use(cors({
-origin: 'https://main--roaring-moonbeam-8ed29d.netlify.app',
+origin: '*',
 credentials: true
 }));
 
