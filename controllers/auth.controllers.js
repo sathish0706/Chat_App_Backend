@@ -96,7 +96,7 @@ const forgotPassword = async (req, res) => {
 
       await tokenPayload.save();
 
-      const link = `http://localhost:3000/passwordReset?token=${newToken}&id=${user._id}`;
+      const link = `https://main--roaring-moonbeam-8ed29d.netlify.app/passwordReset?token=${newToken}&id=${user._id}`;
 
       await sendEmail(user.email, 'Password Reset Link', {name: user.name, link: link});
       
