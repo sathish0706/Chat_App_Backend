@@ -17,7 +17,7 @@ const server = http.createServer(app);
 
 const io = new Server(server,{
     cors: {
-        origin: 'https://main--roaring-moonbeam-8ed29d.netlify.app',
+        origin: 'https://roaring-moonbeam-8ed29d.netlify.app',
         methods: ['GET', 'POST']
     }
 })
@@ -28,7 +28,7 @@ app.use(express.json());
 app.use(cookieParser())
 
 app.use(cors({
-origin: 'https://main--roaring-moonbeam-8ed29d.netlify.app',
+origin: 'https://roaring-moonbeam-8ed29d.netlify.app/',
 credentials: true
 }));
 
